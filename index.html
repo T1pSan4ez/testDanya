@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>JavaScript</title>
+</head>
+<body>
+    <div class="randomFrom">
+    <h1>Random Student</h1>
+        <button onclick="openDisplayModal()" class="buttons" id="addStudent">Add student</button>
+        <ul id="students">
+        </ul>
+        <button onclick="randomSelect()" class="buttons" id="chooseStudent">CHOOSE STUDENT</button>
+    </div>
+    <div id="display-modal" class="modal">
+        <div class="modal-content">
+            <div class="title">
+                <h2 >Add student</h2>
+                <span class="close" onclick="closeDisplayModal()">&times;</span>
+            </div>
+            <hr>
+            <div class="main-modal">
+                <p id="error-add">Enter student name</p>
+                <p id="successful-add" class="hide">Student add</p>
+                <label>Student name</label><input type="text" id="nameInput">
+            </div>
+            <hr>
+            <div class="footer-modal">
+                <button onclick="cancelAdd()" id="clear-button" class="button-cancel">Cancel</button>
+                <button onclick="addToList()" id="add-button" class="button-addStudent">Add student</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

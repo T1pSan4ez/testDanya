@@ -1,0 +1,132 @@
+li {
+    list-style-type: none;
+    text-align: center;
+    border: 1px solid grey;
+    padding: 10px 15px;
+    font-size: 20px;
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+    border-radius: 8px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+.randomFrom {
+    margin: 50px auto;
+    width: 60%;
+    border-radius: 15px;
+    border: 2px solid orange;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 25px;
+    gap: 15px;
+}
+
+.buttons {
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: blue;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+.button-cancel {
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid dimgrey;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: white;
+    background-color: grey;
+}
+
+.button-addStudent{
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid dimgrey;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: cadetblue;
+    color: white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.2);
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 400px;
+    width: 100%;
+}
+#error-add {
+    display: none;
+    padding: 10px 0;
+    color: red;
+    font-size: 20px;
+}
+#successful-add {
+    display: none;
+    padding: 10px 0;
+    color: green;
+    font-size: 20px;
+}
+#chooseStudent {
+    background-color: cornflowerblue;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-modal {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.main-modal label {
+    margin-top: 20px;
+    font-size: 20px;
+}
+.main-modal input {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+.footer-modal {
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+    gap: 15px;
+}
+
+.selected {
+    background-color: greenyellow;
+    color: black;
+}
