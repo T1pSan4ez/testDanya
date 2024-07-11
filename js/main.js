@@ -13,6 +13,7 @@ function addToList() {
 
     if (inputText.trim() !== ''){
         let listItem = document.createElement('li');
+
         listItem.textContent = inputText;
 
         document.getElementById('students').appendChild(listItem);
